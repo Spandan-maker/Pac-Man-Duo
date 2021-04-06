@@ -192,14 +192,12 @@ class Game {
         lives = lives-1;
       }
 
-      score3 = score1 + score2;
-
       if(ghostGroup.isTouching(fireGroup)){
         ghostGroup.get(0).destroy();
         fireGroup.get(0).destroy();
 
-        score1 = score1 + 1;
-        score2 = score2 + 1;
+        score3 = score3 + 1;
+        
 
         player.updateScore();
       }
@@ -210,9 +208,8 @@ class Game {
       }
 
       if(fireGroup2.isTouching(pacs)){
-        score1 = score1 - 1;
-        score2 = score2 - 1;
-
+        score3 = score3 - 1;
+        
         fireGroup2.get(0).destroy();
         explosionSound.play();
 
