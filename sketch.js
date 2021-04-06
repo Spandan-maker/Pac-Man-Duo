@@ -12,9 +12,7 @@ var pacs
 
 var ghostImg1,ghostImg2, fireImg1, fireImg2, powerup, powerupImg
 
-var score1 = 0;
-var score2 = 0;
-var score3 = score1 + score2;
+var score3 = 0
 
 var target = 10;
 var lives = 3;
